@@ -313,6 +313,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
   @override
   void initState() {
     super.initState();
+    setState(() {});
     _countryList = widget.countries ?? countries;
     filteredCountries = _countryList;
     number = widget.initialValue ?? '';
@@ -353,6 +354,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
         });
       }
     }
+    setState(() {});
   }
 
   Future<void> _changeCountry() async {
